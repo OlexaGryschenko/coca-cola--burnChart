@@ -1,0 +1,35 @@
+body { 
+  font-family: sans-serif; 
+  padding: 20px; 
+  max-width: 600px; 
+  margin: auto; 
+}
+.slider-container { 
+  margin: 20px 0; 
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+}
+input[type=range] { 
+  width: 100%; 
+  cursor: pointer; 
+  margin-top: 10px;
+}
+.value-display { 
+  font-weight: bold; 
+  font-size: 1.2em; 
+  color: #1f2937; 
+}
+.result-window {
+  margin: 20px 0;
+  padding: 15px 20px;
+  background-color: #e0f2fe;
+  border-left: 4px solid #3b82f6;
+  border-radius: 6px;
+  font-size: 1.1em;
+  color: #1e3a8a;
+}
+.result-window span {
+  font-weight: bold;
+  color: #1d4ed8;
+}

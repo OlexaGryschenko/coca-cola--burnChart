@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор калорій</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Підключення скриптів з defer для правильного порядку завантаження -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h2>Спалювання енергії від Coca-Cola</h2>
+  
+  <div class="slider-container">
+    <label for="volume">
+      Об'єм коли: <span id="volumeValue" class="value-display">500</span> мл
+    </label>
+    <input type="range" id="volume" min="500" max="3000" step="500" value="500">
+  </div>
+
+  <div class="slider-container">
+    <label for="speed">
+      Швидкість бігу: <span id="speedValue" class="value-display">10</span> км/год
+    </label>
+    <input type="range" id="speed" min="8" max="16" step="1" value="10">
+  </div>
+
+  <div class="result-window">
+    <p>Для обраної швидкості та об'єму потрібно:</p>
+    <p>🏃 Дистанція: <span id="resultDistance">0</span> км</p>
+    <p>⏱ Час: <span id="resultHours">0</span> год <span id="resultMinutes">0</span> хв</p>
+  </div>
+
+  <canvas id="burnChart"></canvas>
+</body>
+</html>
